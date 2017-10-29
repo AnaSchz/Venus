@@ -14,7 +14,8 @@
                 position: absolute;
                 width: 100%;
                 height: 28%;
-                background-color: pink;
+                background-color: #E08C7F;
+                z-index: 0;
             }
             #informacion{
                 position: absolute;
@@ -23,6 +24,7 @@
                 top: 10%;
                 left: 5%;
                 background-color: black;
+                z-index: 1;
             }
                 #pic{
                     position: relative;
@@ -43,7 +45,7 @@
                         height: 12%;
                         border-radius: 30px;
                         border: none;
-                        background-color: white;
+                        background-color: #E08C7F;
                     }
                         #pic > div >p{
                             position: relative;
@@ -60,7 +62,32 @@
                 position: absolute;
                 width: 100%;
                 height: 75%;
+                top: 28%;
+                z-index: 0;
             }
+                #contenido > div{
+                    position: relative;
+                    width: 100%;
+                    height: 10%;
+                    top: 0px;
+                    background-color: #CE8178;
+                    z-index: 0;
+                }
+                    #contenido > div > ul {
+                        position: relative;
+                        width: 75%;
+                        margin-left: 20%;
+                        margin-top: -16px;
+                        list-style-type: none;
+                    }
+                        #contenido > div > ul > li{
+                            position: relative;
+                            display: inline-block;
+                            float: left;
+                            width: 25%;
+                            text-align: center;
+                            transform: translateY(50%);
+                        }
         </style>
     </head>
     <body>
@@ -69,14 +96,23 @@
             <div id="informacion">
                 <div id="pic">
                     <div>
-                        <p>X Amigos</p>
+                        <p>X Contactos</p>
                     </div>
                 </div>
                 <div id="info">
                     
                 </div>
             </div>
-            <div id="contenido"></div>
+            <div id="contenido">
+                <div>
+                    <ul>
+                    <li>Publicaciones</li>
+                    <li>Outfits</li>
+                    <li>Intereses</li>
+                    <li>Peticiones</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </body>
 </html>

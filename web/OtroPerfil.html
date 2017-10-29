@@ -24,19 +24,38 @@
                 left: 5%;
                 background-color: black;
             }
-            #pic{
-                position: relative;
-                width: 100%;
-                height: 50%;
-                margin-top: 0px;
-                background-image: url("images/Ana.jpeg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-            #info{
-                position: relative;
-            }
+                #pic{
+                    position: relative;
+                    width: 100%;
+                    height: 50%;
+                    margin-top: 0px;
+                    top: -16px;
+                    background-image: url("images/Ana.jpeg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+                    #pic > div{
+                        position: relative;
+                        width: 55%;
+                        margin-left: 10%;
+                        top: 80%;
+                        height: 12%;
+                        border-radius: 30px;
+                        border: none;
+                        background-color: white;
+                    }
+                        #pic > div >p{
+                            position: relative;
+                            text-align: center;
+                            top: 50%;
+                            -ms-transform: translateY(-50%);
+                            -webkit-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                        }
+                #info{
+                    position: relative;
+                }
             #contenido{
                 position: absolute;
                 width: 100%;
@@ -49,7 +68,9 @@
             <div id="portada"></div>
             <div id="informacion">
                 <div id="pic">
-                    
+                    <div>
+                        <p>Añadir a contactos</p>
+                    </div>
                 </div>
                 <div id="info">
                     
@@ -59,4 +80,3 @@
         </div>
     </body>
 </html>
-
